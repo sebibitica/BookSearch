@@ -10,7 +10,7 @@ const BookList = ({ searchTerm }) => {
     const fetchBooks = async () => {
       try {
         const response = await fetch(
-          `https://www.googleapis.com/books/v1/volumes?q=subject:fiction&maxResults=20&key=YOUR_KEY`
+          `https://www.googleapis.com/books/v1/volumes?q=subject:fiction&maxResults=20&key=AIzaSyD_-XQMqlcsPlO7nppnnUlU-d9cIN4iBAA`
         );
         const data = await response.json();
         console.log(data.items); // Log the data items
