@@ -1,0 +1,38 @@
+/* src/components/Book.css */
+.book {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    overflow: hidden; /* Ensure the image doesn't overflow */
+  }
+  
+  .book-image {
+    width: 100%;
+    height: auto;
+    max-height: 250px; /* Adjust the maximum height of the image */
+  }
+  
+  .book:hover {
+    transform: scale(1.05);
+  }
+  
+  .book-details {
+    padding: 10px;
+  }
+  
+  .book h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    white-space: nowrap; /* Prevent line break */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Show ellipsis for overflow */
+  }
+  
+  .book p {
+    margin: 0;
+    color: #555;
+  }
+  
