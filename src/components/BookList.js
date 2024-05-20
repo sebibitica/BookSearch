@@ -30,7 +30,7 @@ const BookList = ({ searchTerm }) => {
       setLoading(true);
       try {
         const response = await fetch(
-          `https://www.googleapis.com/books/v1/volumes?q=${searchTerm}&maxResults=20&key=AIzaSyD_-XQMqlcsPlO7nppnnUlU-d9cIN4iBAA`
+          `https://www.googleapis.com/books/v1/volumes?q=${searchTerm}&maxResults=20&key=YOUR_KEY`
         );
         const data = await response.json();
         setBooks(data.items || []);
